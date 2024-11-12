@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gunn Fleet Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/12c120ad3e.js" crossorigin="anonymous"></script>
+  <!-- Begin Work Truck Solutions Vocational Carousel Resources -->
+  <!-- Documentation: https://carousel.worktrucksolutions.com/docs.html -->
+  <!-- https://www.worktrucksolutions.com -->
+  <script type="text/javascript" src="https://carousel.worktrucksolutions.com/js/carousel.min.js" defer></script>
+  <!-- End Work Truck Solutions Vocational Carousel Resources -->
+  <script type="text/javascript" src="scripts.js" defer></script>
+</head>
+
+<body>
+
+  <!-- address & contact bar -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <div class="address">16550 IH 35 North Selma TX 78154-1460</div>
+      <div class="contact">SALES: <strong>(210) 985-8906</strong> | SERVICE: <strong>(888) 816-3726</strong></div>
+    </div>
+  </div>
+
+  <!-- header -->
+  <header id="main-header">
+    <!-- brand logo & imaging -->
+    <div class="header-left">
+      <img src="./images/gunnfmlogo.png" alt="Gunn Fleet Management" class="logo">
+      <img src="./images/be-bl.gif" alt="Chevrolet GMC Business Elite" class="campaign-image">
+      <img src="./images/doty.png" alt="10X Dealer of the Year" class="dealer-image">
+    </div>
+    <!-- links & info -->
+    <div class="header-right">
+      <a href="#hours" class="header-icon">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Hours & Map</span>
+      </a>
+      <a href="#" class="header-icon social-link">
+        <i class="fa-solid fa-share-nodes"></i>
+        <span>Social</span>
+      </a>
+      <a href="https://maps.app.goo.gl/YYjWA4ifW7MbDt7XA" class="header-icon" target="_blank">
+        <i class="fa-solid fa-location-arrow"></i>
+        <span>Visit Us</span>
+      </a>
+      <a href="https://www.gunnchevrolet.com/ServiceApptForm" class="header-icon">
+        <i class="fa-solid fa-wrench"></i>
+        <span>Schedule Service</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- navigation bar -->
+  <nav id="nav-bar">
+    <!-- left-justified navigation-->
+    <ul class="nav-menu-left">
+      <li><a href="./index.html">🏠</a></li>
+      <li><a href="https://gunnfleet.worktrucksolutions.com/?filters=Chassis.Condition:New">New Inventory</a></li>
+      <li><a href="https://gunnfleet.worktrucksolutions.com/?filters=Chassis.Condition:Used">Used Inventory</a></li>
+      <li class="dropdown">Research ▼
+        <ul class="dropdown-content">
+          <li><a href="#">Placeholder 1</a></li>
+          <li><a href="#">Placeholder 2</a></li>
+          <li><a href="#">Placeholder 3</a></li>
+          <li><a href="#">Placeholder 4</a></li>
+          <li><a href="#">Placeholder 5</a></li>
+        </ul>
+      </li>
+      <li><a href="https://gunnfleet.worktrucksolutions.com/?filters=DisplayDesc%3aFeatured">Specials</a></li>
+      <li class="dropdown">Resources ▼
+        <ul class="dropdown-content">
+          <li><a href="#">Placeholder 1</a></li>
+          <li><a href="#">Placeholder 2</a></li>
+          <li><a href="#">Placeholder 3</a></li>
+          <li><a href="#">Placeholder 4</a></li>
+          <li><a href="#">Placeholder 5</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">Our Dealership ▼
+        <ul class="dropdown-content">
+          <li><a href="#">Placeholder 1</a></li>
+          <li><a href="#">Placeholder 2</a></li>
+          <li><a href="#">Placeholder 3</a></li>
+          <li><a href="#">Placeholder 4</a></li>
+          <li><a href="#">Placeholder 5</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Hablamos Español</a></li>
+      <li class="dropdown more-dropdown" style="display: none;">More ▼
+        <ul class="dropdown-content more-dropdown-content">
+        </ul>
+    </li>
+    </ul>
+    <!-- right-justified navigation-->
+    <ul class="nav-menu-right">
+      <li><a href="https://gunnfleet.worktrucksolutions.com/MyGarage">My Garage</a></li>
+      <li><a href="https://gunnfleet.worktrucksolutions.com/Auth/TPLogin">Truck Pro Log In</a></li>
+    </ul>
+  </nav>
+
+  <!-- page-length content container -->
+  <div class="container">
+    <!-- hero section -->
+    <section class="hero-section">
+      <div class="carousel">
+        <a href="#" class="carousel-slide active" style="background-image: url('./images/mainbanner.png');"></a>
+        <a href="#" class="carousel-slide"
+          style="background-image: url('https://media.assets.ansira.net/websites/content/cblt-ms-gmps-en-us/promotion/progressive-2.0/becd0b5c-788e-4d54-910a-8a953148e3d0_c0x0-1600x686_x1600.jpg');"></a>
+        <a href="#" class="carousel-slide"
+          style="background-image: url('https://media.assets.ansira.net/websites/content/gmps-gunnchev/generic/progressive-2.0/2a20d766cc6547e69da06c114aab8fdf_c0x0-1600x686_x1600.jpg');"></a>
+        <!-- this is where extra slides go -->
+      </div>
+
+      <!-- navigation arrows -->
+      <div class="carousel-controls">
+        <span class="carousel-arrow left" onclick="prevSlide()">&#10094;</span>
+        <span class="carousel-arrow right" onclick="nextSlide()">&#10095;</span>
+      </div>
+
+      <!-- slide indicators -->
+      <div class="carousel-indicators">
+        <span class="indicator active" onclick="setSlide(0)"></span>
+        <span class="indicator" onclick="setSlide(1)"></span>
+        <span class="indicator" onclick="setSlide(2)"></span>
+        <!-- adjust for more slides -->
+      </div>
+    </section>
+
+    <!-- WTS carousel -->
+    <section class="wtsCarousel">
+      <div class="wtsCarousel_wrapper" data-OEM="chevrolet" data-url="https://gunnfleet.worktrucksolutions.com"
+        data-exclude="Dovetail Landscape|Chipper Body|Glass Body|Hauler Body|Hooklift Body|Landscape Dump|Mobility|Refrigerated Body|Rollback Body|Saw Body|Step Van / Walk-in|Van Upfit|Welder Body|Wrecker Body|Snow Plow|Mechanics Body|Other/Specialty"
+        data-order="Pickup|Flatbed|Service Body|Cargo Van|Service Utility Van|Box Van|Stake Bed" data-background="#f2f3f5"
+        data-hover-color="#C2D7EE">
+        <h2>Shop by Body</h2>
+      </div>
+    </section>
+
+    <!-- "tailored to your needs" cards -->
+    <section class="cards-section-1">
+      <h2 class="section-title">Tailored to Your Needs</h2>
+      <div class="cards-container">
+        <div class="card card-1">
+          <img src="./images/topcard1.png" alt="Don't Need An Upfit?" class="card-image">
+          <div class="card-content">
+            <h3>Don't Need An Upfit?</h3>
+            <p>We've got the right work truck or van for you, in stock and ready to serve your fleet or small business.
+              Search our inventory and find the right one for you.</p>
+            <div class="card-line"></div>
+            <a href="https://gunnfleet.worktrucksolutions.com/?bodyTypes=Pickup,SUV,Cargo_Van,Minivan,Passenger_Wagon"
+              class="card-link">Browse Pickups, Vans, and SUVs <i class="fa-solid fa-circle-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="card card-2">
+          <img src="./images/topcard2.png" alt="What Vehicle is Best For Me?" class="card-image">
+          <div class="card-content">
+            <h3>What Vehicle is Best For Me?</h3>
+            <p>Not sure what vehicle would best serve your business? Choose your vocation and learn about vehicles and
+              upfits designed for your line of work.</p>
+            <div class="card-line"></div>
+            <a href="#" class="card-link">Browse By Vocation <i class="fa-solid fa-circle-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="card card-3">
+          <img src="./images/topcard3.png" alt="Need Something Special?" class="card-image">
+          <div class="card-content">
+            <h3>Need Something Special?</h3>
+            <p>We can help you with your unique business needs and are ready to offer solutions. Let us know what
+              you're looking for with a custom vehicle request.</p>
+            <div class="card-line"></div>
+            <a href="https://gunnfleet.worktrucksolutions.com/CustomOrders" class="card-link">Custom Vehicle Request <i
+                class="fa-solid fa-circle-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- navigation arrows for scrolling -->
+      <span class="scroll-arrow left-arrow" onclick="scrollLeft()">&#10094;</span>
+      <span class="scroll-arrow right-arrow" onclick="scrollRight()">&#10095;</span>
+    </section>
+
+    <!-- testimonials section -->
+
+    <section id="testimonials">
+      <div class="testimonial-headtext">
+        <h2>See Why Businesses Partner With Us For Their Commercial Needs.</h2>
+      </div>
+      <div class="testimonial-outerdiv">
+        <div class="testimonial-innerdiv">
+          <!-- testimonial 1 -->
+          <div class="testimonial-div1 eachdiv">
+            <div class="userdetails">
+              <div class="imgbox">
+                <img
+                  src="https://lh3.googleusercontent.com/a-/ALV-UjX6rX-cVL31Yfp9dohoX77SJt8Ew8wSENKtJu0iZ4Ql9t_RyfWm=w36-h36-p-rp-mo-ba2-br100"
+                  alt="">
+              </div>
+              <div class="detbox">
+                <p class="testimonial-name">Genniver A.</p>
+                <p class="designation">Verified Review</p>
+              </div>
+            </div>
+            <div class="review">
+              <h4>Gunn Chevrolet went above and beyond to provide the best customer service possible and helped me
+                through and through with my car. Their salesman, Mike Hennigan, was courteous, professional, kind, and
+                overall made my purchasing experience and follow ups a lot easier than going through a small dealership.
+              </h4>
+            </div>
+          </div>
+          <!-- testimonial 2 -->
+          <div class="testimonial-div2 eachdiv">
+            <div class="userdetails">
+              <div class="imgbox">
+                <img
+                  src="https://lh3.googleusercontent.com/a-/ALV-UjV50F_DfjAco_iYnjumiDvuHK42UwYKe4xwSmPHnOOwxlQKKp5K=w36-h36-p-rp-mo-br100"
+                  alt="">
+              </div>
+              <div class="detbox">
+                <p class="testimonial-name">Buckalew</p>
+                <p class="designation">Verified Review</p>
+              </div>
+            </div>
+            <div class="review">
+              <h4>Rick Moreland was OUTSTANDING!!!! Very knowledgeable, detailed…..did a great job, I highly recommend!!
+              </h4>
+            </div>
+          </div>
+          <!-- testimonial 3 -->
+          <div class="testimonial-div3 eachdiv">
+            <div class="userdetails">
+              <div class="imgbox">
+                <img
+                  src="https://lh3.googleusercontent.com/a/ACg8ocLSb2losbqx_M5I8-ceXGMDf_YyVRZI8kW1FxKup7ClmmvwCw=w36-h36-p-rp-mo-br100"
+                  alt="">
+              </div>
+              <div class="detbox">
+                <p class="testimonial-name dark">Marine 1</p>
+                <p class="designation dark">Verified Review</p>
+              </div>
+            </div>
+            <div class="review dark">
+              <h4>My sales man Rob Couser was an absolute professional. From start to finish he was very knowledgeable,
+                enthusiastic and friendly. There wasn’t an instance where I felt he wasn’t prepared for this
+                transaction. I would love to do business with Gunn, and in particular Rob. I was completely satisfied.
+              </h4>
+              <p></p>
+            </div>
+          </div>
+          <!-- testimonial 4 -->
+          <div class="testimonial-div4 eachdiv">
+            <div class="userdetails">
+              <div class="imgbox">
+                <img
+                  src="https://lh3.googleusercontent.com/a-/ALV-UjWE5IXZ15SLRyKD0ddrLOL8Zc7dwCznsHdmvMk8mrhVsZOZgWsj=w36-h36-p-rp-mo-br100"
+                  alt="">
+              </div>
+              <div class="detbox">
+                <p class="testimonial-name dark">Ciera P.</p>
+                <p class="designation dark">Verified Review</p>
+              </div>
+            </div>
+            <div class="review dark">
+              <h4>Made the process as stress free as possible. Brian Reynolds was amazing and
+                helped my fiancé and I so much!</h4>
+            </div>
+          </div>
+          <!-- testimonial 5 -->
+          <div class="testimonial-div5 eachdiv">
+            <div class="userdetails">
+              <div class="imgbox">
+                <img
+                  src="https://lh3.googleusercontent.com/a/ACg8ocI8TfUARdgGtPELzUN_gbYDvXmzPvxOhOmXd9vcoKIVYBITYQ=w36-h36-p-rp-mo-br100"
+                  alt="">
+              </div>
+              <div class="detbox">
+                <p class="testimonial-name">Julie P.</p>
+                <p class="designation">Verified Review</p>
+              </div>
+            </div>
+            <div class="review">
+              <h4>As always, Danny Mireles provided what we needed, and got it for my company by our end of year
+                deadline, and
+                within our budget. Danny has helped me with purchasing multiple vehicles over the past 5 years and it
+                has always been a great experience. If you need fleet vehicles, he is the guy to go to!</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gunn mission statement -->
+    <section class="gunnfleet">
+      <div class="gunnfleet-container">
+        <div class="gunnfleet-logo"><img src="./images/transparentlogo.png" alt="Gunn Fleet Management"></div>
+        <div class="mission-statement">
+          <p>At Gunn Fleet Management, we are driven by a commitment to excellence. As a locally-owned dealership, we
+            know that your business's success relies on reliable, high-performing vehicles. That’s why we offer more
+            than just trucks and vans — we provide tailored fleet solutions designed to help your business thrive.</p>
+          <p>Our dedicated team understands your unique needs, ensuring you have the right vehicle for every job. With
+            flexible financing, comprehensive maintenance plans, and exceptional customer service, we strive to be your
+            trusted partner. Experience the Gunn difference, where integrity, quality, and long-term success come first.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- fleet cards -->
+    <section class="cards-section-2">
+      <div class="cards-container">
+        <div class="card card-1">
+          <img src="./images/botcard1.png" alt="Fleet Development" class="card-image">
+          <div class="card-content">
+            <h3>Fleet Development</h3>
+            <p>Our fleet team will work with you to build a custom fleet designed for growth. We can assist with vehicle
+              selection, upfitting, and scalability to meet your operational goals. By focusing on your unique needs, we
+              lay a solid foundation for long-term success.</p>
+            <div class="card-bottom"><div class="card-line"></div>
+            <a href="#" class="card-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+          </div>
+        </div>
+        </div>
+
+        <div class="card card-2">
+          <img src="./images/botcard2.png" alt="Fleet Management" class="card-image">
+          <div class="card-content">
+            <h3>Fleet Management</h3>
+            <p>Our fleet management solutions ensure your vehicles perform at their best. From maintenance to fuel
+              optimization, we handle everything to reduce downtime and keep your fleet ready and reliable, so you can
+              focus on business growth.</p>
+              <div class="card-bottom">
+            <div class="card-line"></div>
+            <a href="#" class="card-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+          </div>
+          </div>
+        </div>
+
+        <div class="card card-3">
+          <img src="./images/botcard3.png" alt="Fleet Monitoring" class="card-image">
+          <div class="card-content">
+            <h3>Fleet Monitoring</h3>
+            <p>Stay in control on every road. Our fleet monitoring services provide real-time tracking for better
+              oversight. With GPS and telematics, we help monitor fuel, routes, and safety to boost efficiency and
+              accountability across your fleet.</p>
+              <div class="card-bottom">
+            <div class="card-line"></div>
+            <a href="#" class="card-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- navigation arrows for scrolling -->
+      <span class="scroll-arrow left-arrow" onclick="scrollLeft()">&#10094;</span>
+      <span class="scroll-arrow right-arrow" onclick="scrollRight()">&#10095;</span>
+    </section>
+
+
+    <!-- Location & Hours Section -->
+    <div class="location-container" id="hours">
+      <section class="location">
+        <div class="location-details-container">
+          <div class="location-details">
+            <h2>Gunn Fleet Management</h2>
+            <div class="contact-details">
+              <span>16550 IH 35 North Selma, TX 78154</span>
+              <p>Sales: <a href="tel:+18884284896">(210) 985-8906</a></p>
+              <p>Service: <a href="tel:+18888163726">(888) 816-3726</a></p>
+            </div>
+            <a href="https://maps.app.goo.gl/YYjWA4ifW7MbDt7XA" target="_blank"><button id="getDirections">Get
+                Directions</button></a>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3469.515960713378!2d-98.29850282381081!3d29.588683840019527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c926f989339f3%3A0x29a9dd950f499ab7!2sGunn%20Fleet%20and%20Commercial!5e0!3m2!1sen!2sus!4v1730934143029!5m2!1sen!2sus"
+            width="60%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+
+      <section class="hours">
+        <div class="hours-content">
+          <div class="sales-hours">
+            <h3>Sales</h3>
+            <table class="sales-timetable">
+              <tbody>
+                <tr class="day">
+                  <td>Monday</td>
+                  <td>8:30 AM - 5:30 PM</td>
+                </tr>
+                <tr class="day">
+                  <td>Tuesday</td>
+                  <td>8:30 AM - 5:30 PM</td>
+                </tr>
+                <tr class="day">
+                  <td>Wednesday</td>
+                  <td>8:30 AM - 5:30 PM</td>
+                </tr>
+                <tr class="day">
+                  <td>Thursday</td>
+                  <td>8:30 AM - 5:30 PM</td>
+                </tr>
+                <tr class="day">
+                  <td>Friday</td>
+                  <td>8:30 AM - 5:30 PM</td>
+                </tr>
+                <tr class="day">
+                  <td>Saturday</td>
+                  <td>By Appointment</td>
+                </tr>
+                <tr class="day">
+                  <td>Sunday</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="service-hours">
+            <h3>Service</h3>
+            <table class="service-timetable">
+              <tbody>
+                <tr class="day">
+                  <td>Monday</td>
+                  <td>7:00 AM - 7:00 PM</td>
+                </tr>
+                <tr class="day">
+                  <td>Tuesday</td>
+                  <td>7:00 AM - 7:00 PM</td>
+                </tr>
+                <tr class="day">
+                  <td>Wednesday</td>
+                  <td>7:00 AM - 7:00 PM</td>
+                </tr>
+                <tr class="day">
+                  <td>Thursday</td>
+                  <td>7:00 AM - 7:00 PM</td>
+                </tr>
+                <tr class="day">
+                  <td>Friday</td>
+                  <td>7:00 AM - 7:00 PM</td>
+                </tr>
+                <tr class="day">
+                  <td>Saturday</td>
+                  <td>7:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                  <td class="day">Sunday</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="store-image">
+            <img src="./images/gunnstorefront.jpg" alt="Dealership">
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+
+
+    <!-- this closing tag is for the entire page-length container -->
+  </div>
+
+</body>
+
+</html>
