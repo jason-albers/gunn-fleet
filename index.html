@@ -10,13 +10,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/12c120ad3e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles.css">
   <!-- Begin Work Truck Solutions Vocational Carousel Resources -->
   <!-- Documentation: https://carousel.worktrucksolutions.com/docs.html -->
   <!-- https://www.worktrucksolutions.com -->
   <script type="text/javascript" src="https://carousel.worktrucksolutions.com/js/carousel.min.js" defer></script>
   <!-- End Work Truck Solutions Vocational Carousel Resources -->
+  <script src="https://kit.fontawesome.com/12c120ad3e.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="scripts.js" defer></script>
 </head>
 
@@ -44,10 +44,21 @@
         <i class="fa-solid fa-location-dot"></i>
         <span>Hours & Map</span>
       </a>
-      <a href="#" class="header-icon social-link">
+      <a class="header-icon social-link" id="social-link">
         <i class="fa-solid fa-share-nodes"></i>
         <span>Social</span>
       </a>
+      <div class="social-links" id="social-links">
+        <a href="https://www.facebook.com/gunnfleet" alt="Facebook" target="_blank"><i
+            class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://twitter.com/gunnfleet" alt="Twitter" target="_blank"><i
+            class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="https://www.instagram.com/gunnfleet/" alt="Instagram" target="_blank"><i
+            class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/gunnfleetmanagement" alt="Linkedin" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="#" alt="Youtube"><i class="fa-brands fa-youtube" target="_blank"></i></a>
+      </div>
       <a href="https://maps.app.goo.gl/YYjWA4ifW7MbDt7XA" class="header-icon" target="_blank">
         <i class="fa-solid fa-location-arrow"></i>
         <span>Visit Us</span>
@@ -66,7 +77,7 @@
       <li><a href="./index.html">🏠</a></li>
       <li><a href="https://gunnfleet.worktrucksolutions.com/?filters=Chassis.Condition:New">New Inventory</a></li>
       <li><a href="https://gunnfleet.worktrucksolutions.com/?filters=Chassis.Condition:Used">Used Inventory</a></li>
-      <li class="dropdown">Research ▼
+      <li class="dropdown">Research <i class="fa-solid fa-chevron-down"></i>
         <ul class="dropdown-content">
           <li><a href="#">Placeholder 1</a></li>
           <li><a href="#">Placeholder 2</a></li>
@@ -76,7 +87,7 @@
         </ul>
       </li>
       <li><a href="https://gunnfleet.worktrucksolutions.com/?filters=DisplayDesc%3aFeatured">Specials</a></li>
-      <li class="dropdown">Resources ▼
+      <li class="dropdown">Resources <i class="fa-solid fa-chevron-down"></i>
         <ul class="dropdown-content">
           <li><a href="#">Placeholder 1</a></li>
           <li><a href="#">Placeholder 2</a></li>
@@ -85,7 +96,7 @@
           <li><a href="#">Placeholder 5</a></li>
         </ul>
       </li>
-      <li class="dropdown">Our Dealership ▼
+      <li class="dropdown">Our Dealership <i class="fa-solid fa-chevron-down"></i>
         <ul class="dropdown-content">
           <li><a href="#">Placeholder 1</a></li>
           <li><a href="#">Placeholder 2</a></li>
@@ -95,20 +106,82 @@
         </ul>
       </li>
       <li><a href="#">Hablamos Español</a></li>
-      <li class="dropdown more-dropdown" style="display: none;">More ▼
+      <li class="dropdown more-dropdown" style="display: none;">More <i class="fa-solid fa-chevron-down"></i>
         <ul class="dropdown-content more-dropdown-content">
         </ul>
-    </li>
+      </li>
     </ul>
     <!-- right-justified navigation-->
     <ul class="nav-menu-right">
       <li><a href="https://gunnfleet.worktrucksolutions.com/MyGarage">My Garage</a></li>
       <li><a href="https://gunnfleet.worktrucksolutions.com/Auth/TPLogin">Truck Pro Log In</a></li>
     </ul>
+
+    <a class="mobile-nav" id="tel-button" href="tel:+12109858906"><i
+        class="fa-solid fa-phone"></i><span>Sales</span></a>
+    <a class="mobile-nav" href="#hours" id="hours-button"> <i class="fa-solid fa-location-dot"></i> <span>Hours &
+        Map</span> </a>
+    <a class="mobile-nav" href="https://maps.app.goo.gl/YYjWA4ifW7MbDt7XA" target="_blank" id="visit-button"> <i
+        class="fa-solid fa-location-arrow"></i> <span>Visit Us</span> </a>
+    <a class="mobile-nav" href="https://www.gunnchevrolet.com/ServiceApptForm" id="service-button"> <i
+        class="fa-solid fa-wrench"></i> <span>Schedule Service</span> </a>
+    <a class="mobile-nav" id="menu-button"><i class="fa-solid fa-bars"></i><span>Menu</span></a>
   </nav>
 
-  <!-- page-length content container -->
+  <div id="menu-overlay" class="menu-overlay">
+    <button id="menu-close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="menu-content">
+        <a href="https://gunnfleet.worktrucksolutions.com/MyGarage">My Garage</a>
+        <div class="mobile-social-links" id="mobile-social-links">
+          <a href="https://www.facebook.com/gunnfleet" alt="Facebook" target="_blank"><i
+              class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://twitter.com/gunnfleet" alt="Twitter" target="_blank"><i
+              class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="https://www.instagram.com/gunnfleet/" alt="Instagram" target="_blank"><i
+              class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/gunnfleetmanagement" alt="Linkedin" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="#" alt="Youtube"><i class="fa-brands fa-youtube" target="_blank"></i></a>
+        </div>
+        <a href="./index.html">🏠</a>
+        <a href="https://gunnfleet.worktrucksolutions.com/?filters=Chassis.Condition:New">New Inventory</a>
+        <a href="https://gunnfleet.worktrucksolutions.com/?filters=Chassis.Condition:Used">Used Inventory</a>
+        <div class="mobile-dropdown">Research <i class="fa-solid fa-chevron-down"></i>
+          <div class="mobile-dropdown-content">
+            <a href="#">Placeholder 1</a>
+            <a href="#">Placeholder 2</a>
+            <a href="#">Placeholder 3</a>
+            <a href="#">Placeholder 4</a>
+            <a href="#">Placeholder 5</a>
+          </div>
+        </div>
+        <a href="https://gunnfleet.worktrucksolutions.com/?filters=DisplayDesc%3aFeatured">Specials</a>
+        <div class="mobile-dropdown">Resources <i class="fa-solid fa-chevron-down"></i>
+          <div class="mobile-dropdown-content">
+            <a href="#">Placeholder 1</a>
+            <a href="#">Placeholder 2</a>
+            <a href="#">Placeholder 3</a>
+            <a href="#">Placeholder 4</a>
+            <a href="#">Placeholder 5</a>
+          </div>
+        </div>
+        <div class="mobile-dropdown">Our Dealership <i class="fa-solid fa-chevron-down"></i>
+          <div class="mobile-dropdown-content">
+            <a href="#">Placeholder 1</a>
+            <a href="#">Placeholder 2</a>
+            <a href="#">Placeholder 3</a>
+            <a href="#">Placeholder 4</a>
+            <a href="#">Placeholder 5</a>
+          </div>
+        </div>
+        <a href="#">Hablamos Español</a>
+        <a href="https://gunnfleet.worktrucksolutions.com/Auth/TPLogin">Truck Pro Log In</a>
+    </div>
+  </div>
+
+  <!-- body 1px border div -->
   <div class="container">
+
     <!-- hero section -->
     <section class="hero-section">
       <div class="carousel">
@@ -138,18 +211,20 @@
     <!-- WTS carousel -->
     <section class="wtsCarousel">
       <div class="wtsCarousel_wrapper" data-OEM="chevrolet" data-url="https://gunnfleet.worktrucksolutions.com"
-        data-exclude="Dovetail Landscape|Chipper Body|Glass Body|Hauler Body|Hooklift Body|Landscape Dump|Mobility|Refrigerated Body|Rollback Body|Saw Body|Step Van / Walk-in|Van Upfit|Welder Body|Wrecker Body|Snow Plow|Mechanics Body|Other/Specialty"
-        data-order="Pickup|Flatbed|Service Body|Cargo Van|Service Utility Van|Box Van|Stake Bed" data-background="#f2f3f5"
-        data-hover-color="#C2D7EE">
+        data-exclude="Dovetail Landscape|Combo Body|Contractor Body|Box Truck|Chipper Body|Glass Body|Hauler Body|Hooklift Body|Landscape Dump|Mobility|Refrigerated Body|Rollback Body|Saw Body|Step Van / Walk-in|Van Upfit|Welder Body|Wrecker Body|Snow Plow|Mechanics Body|Other/Specialty|Service Utility Van"
+        data-include="KUV" data-order="Pickup|Flatbed|Service Body|Cargo Van|KUV|Box Van|Stake Bed"
+        data-background="#f2f3f5" data-hover-color="#C2D7EE">
         <h2>Shop by Body</h2>
       </div>
     </section>
 
     <!-- "tailored to your needs" cards -->
-    <section class="cards-section-1">
+    <div class="card-header">
       <h2 class="section-title">Tailored to Your Needs</h2>
-      <div class="cards-container">
-        <div class="card card-1">
+    </div>
+    <section id="cards-section-1">
+      <div class="card-container">
+        <div class="card">
           <img src="./images/topcard1.png" alt="Don't Need An Upfit?" class="card-image">
           <div class="card-content">
             <h3>Don't Need An Upfit?</h3>
@@ -161,7 +236,7 @@
           </div>
         </div>
 
-        <div class="card card-2">
+        <div class="card">
           <img src="./images/topcard2.png" alt="What Vehicle is Best For Me?" class="card-image">
           <div class="card-content">
             <h3>What Vehicle is Best For Me?</h3>
@@ -172,7 +247,7 @@
           </div>
         </div>
 
-        <div class="card card-3">
+        <div class="card">
           <img src="./images/topcard3.png" alt="Need Something Special?" class="card-image">
           <div class="card-content">
             <h3>Need Something Special?</h3>
@@ -184,13 +259,11 @@
           </div>
         </div>
       </div>
-      <!-- navigation arrows for scrolling -->
-      <span class="scroll-arrow left-arrow" onclick="scrollLeft()">&#10094;</span>
-      <span class="scroll-arrow right-arrow" onclick="scrollRight()">&#10095;</span>
+      <span class="scroll-arrow left-arrow">&#10094;</span>
+      <span class="scroll-arrow right-arrow">&#10095;</span>
     </section>
 
     <!-- testimonials section -->
-
     <section id="testimonials">
       <div class="testimonial-headtext">
         <h2>See Why Businesses Partner With Us For Their Commercial Needs.</h2>
@@ -231,7 +304,7 @@
               </div>
             </div>
             <div class="review">
-              <h4>Rick Moreland was OUTSTANDING!!!! Very knowledgeable, detailed…..did a great job, I highly recommend!!
+              <h4>Rick Moreland was OUTSTANDING!!!! Very knowledgeable, detailed… did a great job, I highly recommend!!
               </h4>
             </div>
           </div>
@@ -315,8 +388,8 @@
     </section>
 
     <!-- fleet cards -->
-    <section class="cards-section-2">
-      <div class="cards-container">
+    <section id="cards-section-2">
+      <div class="card-container">
         <div class="card card-1">
           <img src="./images/botcard1.png" alt="Fleet Development" class="card-image">
           <div class="card-content">
@@ -324,10 +397,11 @@
             <p>Our fleet team will work with you to build a custom fleet designed for growth. We can assist with vehicle
               selection, upfitting, and scalability to meet your operational goals. By focusing on your unique needs, we
               lay a solid foundation for long-term success.</p>
-            <div class="card-bottom"><div class="card-line"></div>
-            <a href="#" class="card-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+            <div class="card-bottom">
+              <div class="card-line"></div>
+              <a href="#" class="card-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div>
           </div>
-        </div>
         </div>
 
         <div class="card card-2">
@@ -337,10 +411,10 @@
             <p>Our fleet management solutions ensure your vehicles perform at their best. From maintenance to fuel
               optimization, we handle everything to reduce downtime and keep your fleet ready and reliable, so you can
               focus on business growth.</p>
-              <div class="card-bottom">
-            <div class="card-line"></div>
-            <a href="#" class="card-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
-          </div>
+            <div class="card-bottom">
+              <div class="card-line"></div>
+              <a href="#" class="card-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div>
           </div>
         </div>
 
@@ -351,16 +425,16 @@
             <p>Stay in control on every road. Our fleet monitoring services provide real-time tracking for better
               oversight. With GPS and telematics, we help monitor fuel, routes, and safety to boost efficiency and
               accountability across your fleet.</p>
-              <div class="card-bottom">
-            <div class="card-line"></div>
-            <a href="#" class="card-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+            <div class="card-bottom">
+              <div class="card-line"></div>
+              <a href="#" class="card-link">Learn More <i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
-      </div>
       <!-- navigation arrows for scrolling -->
-      <span class="scroll-arrow left-arrow" onclick="scrollLeft()">&#10094;</span>
-      <span class="scroll-arrow right-arrow" onclick="scrollRight()">&#10095;</span>
+      <span class="scroll-arrow left-arrow">&#10094;</span>
+      <span class="scroll-arrow right-arrow">&#10095;</span>
     </section>
 
 
@@ -464,14 +538,7 @@
         </div>
       </section>
     </div>
-
-
-
-    <script src="script.js"></script>
-
-
-
-    <!-- this closing tag is for the entire page-length container -->
+    <!-- body 1px border /div -->
   </div>
 
 </body>
